@@ -16,13 +16,14 @@ public interface ApiInterface {
     @GET("top-headlines")
     Call<Posts> getPosts(
             @Query("country") String country ,
-            @Query("pageSize") int pageSize,
+            @Query("pageSize") int pageSize,//for specifying how many posts I want
             @Query("apiKey") String apiKey
     );
 }
 /*
-* https://newsapi.org/v1/articles?source=techcrunch&sortBy=top&apiKey=4f2185f3d27e42749600b84d556061d5
-* @Query("source") String source ,
-            @Query("country") String country,
-            @Query("apikey") String apiKey
+ده اللنك الأصلي بيتقسم لbase url و الpath الهو top-headLines في الحالة دي
+بعد كده اي حاجة بعد ? دي queries
+بحدد بيها خضائص تانية وي البلد العايزة اخبارها و الapikey البيديني صلاحية اني استخدم api
+* https://newsapi.org/v2/top-headlines?country=us&apiKey=4f2185f3d27e42749600b84d556061d5
+*
 * */
