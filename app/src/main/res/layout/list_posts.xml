@@ -10,7 +10,6 @@
     android:padding="8dp">
 
 
-
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,6 +76,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="News Author"
+                    android:maxLines="1"
+                    android:ellipsize="end"
                     android:textColor="#42A5F5"
                     android:textSize="15sp" />
 
@@ -90,12 +91,13 @@
                 android:gravity="right"
                 android:text="Time"
                 android:textColor="#42A5F5"
+                android:maxLength="10"
                 android:textSize="14sp" />
-
         </LinearLayout>
 
 
     </LinearLayout>
 
-    
+
+
 </LinearLayout>
